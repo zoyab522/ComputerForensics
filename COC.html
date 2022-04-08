@@ -21,7 +21,7 @@
                     <div class = "backgroundTextColor">
                         <div class = "backgroundText">
                             <br><br>
-                            Create a Form
+                            Create a Chain of Custody Form
                             <br>
                             <br><br>
                         </div>
@@ -34,7 +34,17 @@
 			</header>
 
             <div>
-                <p class = "intro">Welcome to SZ Computing! Here, you can complete a full, formal digital forensics report for official use 
-                    with the provided template. Once you've completed the template, simply click the download button to save the report.
+                <p class = "intro">Welcome to SZ Computing! Here, you can complete a <b>Chain of Custody</b> Form for official use 
+                    with the provided template. Once you've completed the template, simply click the download button to save the form.
                 </p>
             </div>
+
+            <div class = "container">
+            <div class = cocdiv>
+                <form id="my-form" onsubmit="return: false;">
+                    <h1>OFFICIAL USE ONLY</h1>
+                    <h2>DIGITAL EVIDENCE CHAIN OF CUSTODY FORM</h2><br><br>
+                    <fieldset class = "fieldsets">
+                    <label for="agencyName">Your Agency Name:</label>
+                    <input type="text" id="agencyName" name="agencyName">
+                        <br><br> 
