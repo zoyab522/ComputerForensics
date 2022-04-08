@@ -124,7 +124,41 @@
 
 .formdiv {
     text-align: center;
+    margin: 100px;
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    background-color: #e2e5e4;
+    border-radius: 6px;
+  }
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    background-color: #e2e5e4;
+    border-radius: 6px;
+
+  }
+
+  select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e2e5e4;
+  }
+
+  .fieldsets {
+      padding: 40px;
+  }
 
 /* formatting for evidence table on form */
 table, th, td {
