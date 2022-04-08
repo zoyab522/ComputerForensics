@@ -68,13 +68,21 @@
     padding: 40px;
 }
 
-.CreativityCode p {
+.intro {
     font-family: Arial;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+    margin: 70px;
     color: white;
     font-style:normal;
-    padding: 30px;
+    padding: 20px;
+    line-height: 45px;
+}
+
+h1{
+    font-family: Arial;
+    font-size: 40px;
+    color:#3b4146;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -115,16 +123,26 @@
 
 /* Intro Paragraph for Forms.CSS */
 
-.intro {
-    font-family: Arial;
-    font-size: 24px;
-    text-align: center;
-    padding: 50px;
-}
+.container {
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
 
 .formdiv {
     text-align: center;
-    margin: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.cocdiv {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
 }
 
 input[type=text] {
@@ -133,7 +151,7 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
     border:none;
-    background-color: #e2e5e4;
+    background-color: rgb(223, 223, 223);
     border-radius: 6px;
   }
 
@@ -143,9 +161,30 @@ input[type=email] {
     margin: 8px 0;
     box-sizing: border-box;
     border:none;
-    background-color: #e2e5e4;
+    background-color: rgb(223, 223, 223);
     border-radius: 6px;
 
+  }
+
+  input[type=datetime-local] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:none;
+    background-color: rgb(223, 223, 223);
+    border-radius: 6px;
+
+  }
+
+  label, p, legend {
+    font-family: Arial;
+    padding: 15px;
+    line-height: 25px;
+  }
+
+  legend {
+      font-size: 30px;
   }
 
   select {
@@ -153,16 +192,73 @@ input[type=email] {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    background-color: #e2e5e4;
+    background-color: rgb(223, 223, 223);
   }
 
   .fieldsets {
       padding: 40px;
+      border-radius: 10px;
+  }
+
+  h2 {
+      font-family: Arial;
+      color:#3b4146;
+  }
+
+  input[type=button] {
+    padding: 12px;
+    border:none;
+    background-color: rgb(223, 223, 223);
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: Futura;
+    font-style:oblique;
   }
 
 /* formatting for evidence table on form */
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
   }
 
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+  }
+tr:hover {background-color: rgba(247, 247, 255, 0.767);}
+
+/* checkboxes */
+
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  input[type=checkbox]:hover {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  input[type=checkbox]:checked {
+    background-color: #2196F3;
+  }
+
+/*CHAIN OF CUSTODY FORM*/
+h1 {
+    text-align: center;
+}
+
+legend {
+    text-align: center;
+}
+
+.cocform {
+    text-align: center;
+}
+
+th, tr, td{
+    font-family: Arial;
+}

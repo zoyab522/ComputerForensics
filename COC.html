@@ -21,7 +21,7 @@
                     <div class = "backgroundTextColor">
                         <div class = "backgroundText">
                             <br><br>
-                            Create a Form
+                            Create a Chain of Custody Form
                             <br>
                             <br><br>
                         </div>
@@ -29,12 +29,126 @@
                 </div>
                 <div class = "CreativityCode">
                     Begin filling out the form template below!
+
+            <div>
+                <p class = "intro">Welcome to SZ Computing! Here, you can complete a <b>Chain of Custody</b> Form for official use 
+                    with the provided template. Once you've completed the template, simply click the download button to save the form.
+                </p>
+            </div>
                 </div>
 
 			</header>
 
-            <div>
-                <p class = "intro">Welcome to SZ Computing! Here, you can complete a full, formal digital forensics report for official use 
-                    with the provided template. Once you've completed the template, simply click the download button to save the report.
-                </p>
-            </div>
+            <br><br><br><br><br><br>
+
+            <div class = cocdiv>
+                <form id="my-form" onsubmit="return: false;">
+                    <fieldset class = "fieldsets">
+                    <legend><h1>DIGITAL FORENSICS CHAIN OF CUSTODY</h1></legend>
+                    <fieldset class = "fieldsets">
+                    <label for="agencyName">Your Agency Name:</label>
+                    <input type="text" id="agencyName" name="agencyName">
+                        <br><br>
+                    <label for="caseNum">Case Number:</label>
+                    <input type="text" id="caseNum" name="caseNum" size = "40"><br><br>
+                    </fieldset>
+                    <br><br>
+                    <fieldset class = "fieldsets">
+                        <legend class = "cocform">FORM</legend>
+                        <table id="mytable" style='width:100%'>
+                            <thead>
+                              <tr>
+                              <th style='width:15%'>Item #</h1>
+                              <th style='width:20%'>Date/Time Removed</h1>
+                              <th style='width:50%'>Reason For Removal of Evidence</h1>
+                              <th style='width:15%'>Signature</h1>
+                             </tr>
+                             <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>7</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>8</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>9</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                                <tr>
+                                  <td>10</td>
+                                  <td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td>
+                                  </tr>
+                             </tbody>
+                            </table>
+                    </fieldset>
+                                                
+                          </thead>
+                          </fieldset>
+                    </form>
+                        <br><br>
+                        <input type="button" id="submit-form" 
+                        value="Submit" />
+                    </div>
+            
+                    <script>
+                        const myForm = document
+                        .querySelector("#my-form");
+              
+                    const submitForm = document
+                        .querySelector("#submit-form");
+              
+                    submitForm.addEventListener("click", () => {
+              
+                        // Creating element to download pdf
+                        var element = document.createElement('a');
+              
+                        // Setting the path to the pdf file
+                        element.href = 'GFG.pdf';
+              
+                        // Name to display as download
+                        element.download = 'GFG.pdf';
+              
+                        // Adding element to the body
+                        document.documentElement.appendChild(element);
+              
+                        // Above code is equivalent to
+                        // <a href="path to file" download="download name"/>
+              
+                        // Trigger the file download
+                        element.click();
+              
+                        // Remove the element from the body
+                        document.documentElement.remove(element);
+            
+                        });
+                    </script>
+            
+            </body>
+
+            </html>

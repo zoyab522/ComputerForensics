@@ -29,20 +29,19 @@
                 </div>
                 <div class = "CreativityCode">
                     Begin filling out the form template below!
+                    <p class = "intro">Welcome to SZ Computing! Here, you can complete a full, formal digital forensics report for official use 
+                        with the provided template. Once you've completed the template, simply click the download button to save the report.
+                    </p>
                 </div>
 
 			</header>
 
-            <div>
-                <p class = "intro">Welcome to SZ Computing! Here, you can complete a full, formal digital forensics report for official use 
-                    with the provided template. Once you've completed the template, simply click the download button to save the report.
-                </p>
-            </div>
-
+            <div class = "container">
             <div class = formdiv>
+                <fieldset class = "fieldsets">
+                    <legend><h1>DIGITAL EVIDENCE FORENSIC REPORT</h1></legend>
+
                 <form id="my-form" onsubmit="return: false;">
-                    <h1>OFFICIAL USE ONLY</h1>
-                    <h2>DIGITAL EVIDENCE FORENSIC REPORT</h2><br><br>
                     <fieldset class = "fieldsets">
                     <label for="agencyName">Your Agency Name:</label>
                     <input type="text" id="agencyName" name="agencyName">
@@ -69,12 +68,12 @@
                     <input type="text" id="oagencycase" name="oagencycase"><br><br>
 
                     <label for="remedy">Remedy #:</label>
-                    <input type="text" id="remedy" name="remedy">
+                    <input type="text" id="remedy" name="remedy"><br><br>
                     
-                    <label for="dateandtime">Date/Time Report Completed:</label>
+                    <label for="dateandtime">Date/Time Report Completed:</label><br>
                     <input type="datetime-local" id="dateandtime" name="dateandtime">
                     <br><br>
-                    <label for="reporttype">Type of Report: </label>
+                    <label for="reporttype">Type of Report: </label><br><br>
                     <select id="reporttype" name="reporttype">
                         <option value="Initial">Initial</option>
                         <option value="Supplemental">Supplemental</option>
@@ -82,9 +81,9 @@
                       </select>
                     </fieldset>
                     <br><br><br>
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <legend>INVOLVED</legend>
-                        <fieldset>
+                        <fieldset class = "fieldsets">
                         <input type="checkbox" id="involved" name="involved" value="involved">
                         <label for="involved"> Involved</label>
                         
@@ -132,7 +131,7 @@
                     </fieldset>
 
                         <br><br><br>
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <input type="checkbox" id="involved" name="involved" value="involved">
                         <label for="involved"> Involved</label>
                         
@@ -181,7 +180,7 @@
                     </fieldset>
 
                     <br><br><br>
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <input type="checkbox" id="involved" name="involved" value="involved">
                         <label for="involved"> Involved</label>
                         
@@ -230,7 +229,7 @@
                     </fieldset>
 
                     <br><br><br>
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <input type="checkbox" id="involved" name="involved" value="involved">
                         <label for="involved"> Involved</label>
                         
@@ -279,7 +278,7 @@
                     </fieldset>
                     
                     <br><br><br>
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <input type="checkbox" id="involved" name="involved" value="involved">
                         <label for="involved"> Involved</label>
                         
@@ -328,14 +327,14 @@
                     </fieldset>
                        <br><br>
                     
-                       <fieldset>   
-                        <br><br>
+                       <fieldset class = "fieldsets">   
                         <legend>CLASSIFICATION LEVEL</legend>     
                         <textarea name="summary">CLASSIFICATION LEVEL HERE
 May be exempt from public release under the Freedom of Information Act (5 U.S.C. 552) exemption number and category: 7, Law Enforcement
                             
 Department of Name of Agency review required before public release
-Name/Org: Your name/org	Date: 
+Name/Org: Your name/org	
+Date: 
 Guidance (if applicable): 
                             </textarea>
                             <br><br>
@@ -343,16 +342,13 @@ Guidance (if applicable):
 
                     </fieldset>
                     <br><br>
-                    <fieldset>   
-                        <br><br>
+                    <fieldset class = "fieldsets">   
                         <legend>SUMMARY</legend>     
                         <textarea name="summary">Begin typing summary.</textarea>
-                            <br><br>
                     </fieldset>
                    <br><br>
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <legend>EVIDENCE SUBMITTED</legend>
-                        <br><br>
 
                     <script>
                     function addRow(){
@@ -387,37 +383,33 @@ Guidance (if applicable):
                         </tr>
                       </tbody>
                         </table>
-                          <br><br>
-                        <input type="button" value="Add" onclick="addRow()" />    
+                        <br><br>
+                        <input class = "AddB" type="button" value="Add" onclick="addRow()" />    
                     </fieldset>
 
-                  </form>
-
                   <br><br>
-                  <fieldset>   
-                    <br><br>
+                  <fieldset class = "fieldsets">   
                     <legend>SOFTWARE UTILZED</legend>     
                     <textarea name="summary">All software utilized in this examination is fully licensed and registered to [Agency Name] or its agents.  All software and forensic hardware has been validated pursuant to [Agency Name] policies and procedures.</textarea>
-                        <br><br>
                 </fieldset>
 
                 <br><br>
-                  <fieldset>   
-                    <br><br>
+                  <fieldset class = "fieldsets">   
                     <legend>FORENSIC EXAMINATION OF EVIDENCE</legend>     
-                    <h3>Evidence Figures/Images</h3>
+                    <h2><strong>Evidence Figures/Images</strong></h2>
+                    <br>
                     <label for="myfile">Select a file:</label>
-                    <input type="file" id="myfile" name="myfile">
+                    <input type="file" id="myfile" name="myfile"><br><br>
                     <label for="myfile">Select a file:</label>
-                    <input type="file" id="myfile" name="myfile">
+                    <input type="file" id="myfile" name="myfile"><br><br>
                     <label for="myfile">Select a file:</label>
-                    <input type="file" id="myfile" name="myfile">
+                    <input type="file" id="myfile" name="myfile"><br><br>
                     </fieldset>
                     <br><br>
 
-                    <fieldset>
+                    <fieldset class = "fieldsets">
                         <legend>HASH OF ORIGINAL EVIDENCE</legend>
-                    <p>The hash values obtained from the original evidence were as follows:</p>
+                    <p><strong>The hash values obtained from the original evidence were as follows:</strong></p>
                     <input type="checkbox" id="MD5" name="MD5" value="MD5">
                         <label for="MD5"> MD5:</label>
                         <input type="text" id="MD5" name="MD5">
@@ -431,7 +423,7 @@ Guidance (if applicable):
                         <input type="text" id="Other" name="Other">
                 </fieldset>
                 <br><br>
-                <fieldset>
+                <fieldset class = "fieldsets">
                     <legend>FORENSIC IMAGING</legend>
                 <p>After obtaining the hash value(s) of the original media, a forensic image was created.  The forensic image was placed on a:</p>
                 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
@@ -450,13 +442,11 @@ Guidance (if applicable):
                     <label for="checkbox">Did not match the original hash value(s) of the media.  If checked, provide explanation below.</label>
                     <br><br>
                     <textarea name="summary">Type explanation here.</textarea>
-                        <br><br>
-                <br><br>
-                
             </fieldset>
 
             <br><br>
-                <fieldset>
+
+                <fieldset class = "fieldsets">
                     <legend>VIRUS AND MALWARE</legend>
                 <p>The original media was scanned for malware. Prior to the scan, all malware definitions were updated.  The results were:</p>
                 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
@@ -465,23 +455,19 @@ Guidance (if applicable):
                 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
                     <label for="checkbox">Malware detected.</label>
                     <br><br>
-                    <textarea name="summary">Identify and report on malware.</textarea>
-                        <br><br>
-                <br><br>
-                
+                    <textarea name="summary">Identify and report on malware.</textarea>                
             </fieldset>
+
             <br><br>
-            <fieldset>
+
+            <fieldset class = "fieldsets">
                 <legend>DRIVE GEOMETRY</legend>
-                <br><br>
                 <textarea name="summary">If necessary, report on drive geometry.</textarea>
-                    <br><br>
-            <br><br>
             
         </fieldset>
 
         <br><br>
-            <fieldset>
+            <fieldset class = "fieldsets">
                 <legend>BIOS EXAMINATION</legend>
                 <p>Once the hard drive was removed, the computer was turned on and the BIOS (Basic Input/Output System) checked.  The following was found:</p>
                 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
@@ -508,17 +494,19 @@ Guidance (if applicable):
         </fieldset>
 
         <br><br>
-        <fieldset>   
-          <br><br>
+        <fieldset class = "fieldsets">   
           <legend>CONCLUSION</legend>     
           <textarea name="summary">Forensic Examiner Conclusion Here</textarea>
-              <br><br>
       </fieldset>
-        
         </form>
+    </fieldset>
+
+
             <br><br>
-            <input type="submit" id="submit-form" 
+            <input type="button" id="submit-form" 
             value="Submit" />
+        </div>
+        </div>
 
         <script>
             const myForm = document
