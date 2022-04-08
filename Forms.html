@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ForensicsSiteCSS.css">
+<title>Home</title>	
+</head>
+		<body>
+			<header>
+
+                <div class="header">
+                    <a href="Home.html">Home</a>
+                    <a href="Forms.html">Formal Report Form</a>
+                    <a href="COC.html">Chain of Custody Form</a>
+                    <a href="EvidenceTables.html">Evidence Tables</a>
+                </div>
+                <div class = "backgroundImage">
+                    <div class = "backgroundTextColor">
+                        <div class = "backgroundText">
+                            <br><br>
+                            Create a Form
+                            <br>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class = "CreativityCode">
+                    Begin filling out the form template below!
+                </div>
+
+			</header>
+
+            <div>
+                <p class = "intro">Welcome to SZ Computing! Here, you can complete a full, formal digital forensics report for official use 
+                    with the provided template. Once you've completed the template, simply click the download button to save the report.
+                </p>
+            </div>
+
+            <div class = formdiv>
+                <form>
+                    <h1>OFFICIAL USE ONLY</h1>
+                    <h2>DIGITAL EVIDENCE FORENSIC REPORT</h2><br><br>
+                    <fieldset>
+                    <label for="agencyName">Your Agency Name</label>
+                    <input type="agencyName" id="agencyName" name="agencyName">
+                        <br><br>
+                        
+                    <label for="address">Your Address:</label>
+                    <input type="text" id="address" name="address" size = "40">
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" size = "30">
+
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+
+                    <label for="zip">ZIP:</label>
+                    <input type="text" id="zip" name="zip">
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <legend>CASE INFORMATION</legend>
+                    <label for="caseno">Agency Case #</label>
+                    <input type="text" id="caseno" name="caseno">
+
+                    <label for="oagencycase">Originating Agency Case #</label>
+                    <input type="text" id="oagencycase" name="oagencycase"><br><br>
+
+                    <label for="remedy">Remedy #:</label>
+                    <input type="text" id="remedy" name="remedy">
+                    
+                    <label for="dateandtime">Date/Time Report Completed:</label>
+                    <input type="datetime-local" id="dateandtime" name="dateandtime">
+                    
+                    <label for="reporttype">Type of Report: </label>
+                    <select id="reporttype" name="reporttype">
+                        <option value="Initial">Initial</option>
+                        <option value="Supplemental">Supplemental</option>
+                        <option value="Follow-Up">Follow-Up</option>
+                      </select>
+                    </fieldset>
+                    <br><br><br>
+                    <fieldset>
+                        <legend>INVOLVED</legend>
+                        <fieldset>
+                        <input type="checkbox" id="involved" name="involved" value="involved">
+                        <label for="involved"> Involved</label>
+                        
+                        <input type="checkbox" id="witness" name="witness" value="witness">
+                        <label for="witness"> Witness</label>
+                        
+                        <input type="checkbox" id="complainant" name="complainant" value="complainant">
+                        <label for="complainant"> Complainant</label>
+
+                        <input type="checkbox" id="mentioned" name="mentioned" value="mentioned">
+                        <label for="mentioned"> Mentioned</label>
+                        <br><br>
+                        <label for="firstn">First Name</label>
+                        <input type="firstn" id="firstn" name="firstn" size = "30">
+
+                        <label for="lastn">Last Name</label>
+                        <input type="lastn" id="lastn" name="lastn" size = "30">
+
+                        <label for="title">Title:</label>
+                        <input type="title" id="title" name="title" size = "30">
+                        <br><br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" size = "30">
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" size = "30">
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state">
+
+                        <label for="zip">ZIP CODE:</label>
+                        <input type="text" id="zip" name="zip">
+                        <br><br>
+                        <label for="mailstop">Mailstop:</label>
+                        <input type="text" id="mailstop" name="mailstop">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size = "30">
+
+                        <label for="cellphone">Cell Phone #:</label>
+                        <input type="text" id="cellphone" name="cellphone">
+
+                        <label for="workphone">Work Phone #:</label>
+                        <input type="text" id="workphone" name="workphone">
+
+                        <label for="employee">Employee #:</label>
+                        <input type="text" id="employee" name="employee">
+                        </fieldset>
+
+                        <br><br><br>
+                    <fieldset>
+                        <input type="checkbox" id="involved" name="involved" value="involved">
+                        <label for="involved"> Involved</label>
+                        
+                        <input type="checkbox" id="witness" name="witness" value="witness">
+                        <label for="witness"> Witness</label>
+                        
+                        <input type="checkbox" id="complainant" name="complainant" value="complainant">
+                        <label for="complainant"> Complainant</label>
+
+                        <input type="checkbox" id="mentioned" name="mentioned" value="mentioned">
+                        <label for="mentioned"> Mentioned</label>
+                        <br><br>
+                        <label for="firstn">First Name</label>
+                        <input type="firstn" id="firstn" name="firstn" size = "30">
+
+                        <label for="lastn">Last Name</label>
+                        <input type="lastn" id="lastn" name="lastn" size = "30">
+
+                        <label for="title">Title:</label>
+                        <input type="title" id="title" name="title" size = "30">
+                        <br><br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" size = "30">
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" size = "30">
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state">
+
+                        <label for="zip">ZIP CODE:</label>
+                        <input type="text" id="zip" name="zip">
+                        <br><br>
+                        <label for="mailstop">Mailstop:</label>
+                        <input type="text" id="mailstop" name="mailstop">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size = "30">
+
+                        <label for="cellphone">Cell Phone #:</label>
+                        <input type="text" id="cellphone" name="cellphone">
+
+                        <label for="workphone">Work Phone #:</label>
+                        <input type="text" id="workphone" name="workphone">
+
+                        <label for="employee">Employee #:</label>
+                        <input type="text" id="employee" name="employee">
+
+                        
+                    </fieldset>
+
+                    <br><br><br>
+                    <fieldset>
+                        <input type="checkbox" id="involved" name="involved" value="involved">
+                        <label for="involved"> Involved</label>
+                        
+                        <input type="checkbox" id="witness" name="witness" value="witness">
+                        <label for="witness"> Witness</label>
+                        
+                        <input type="checkbox" id="complainant" name="complainant" value="complainant">
+                        <label for="complainant"> Complainant</label>
+
+                        <input type="checkbox" id="mentioned" name="mentioned" value="mentioned">
+                        <label for="mentioned"> Mentioned</label>
+                        <br><br>
+                        <label for="firstn">First Name</label>
+                        <input type="firstn" id="firstn" name="firstn" size = "30">
+
+                        <label for="lastn">Last Name</label>
+                        <input type="lastn" id="lastn" name="lastn" size = "30">
+
+                        <label for="title">Title:</label>
+                        <input type="title" id="title" name="title" size = "30">
+                        <br><br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" size = "30">
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" size = "30">
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state">
+
+                        <label for="zip">ZIP CODE:</label>
+                        <input type="text" id="zip" name="zip">
+                        <br><br>
+                        <label for="mailstop">Mailstop:</label>
+                        <input type="text" id="mailstop" name="mailstop">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size = "30">
+
+                        <label for="cellphone">Cell Phone #:</label>
+                        <input type="text" id="cellphone" name="cellphone">
+
+                        <label for="workphone">Work Phone #:</label>
+                        <input type="text" id="workphone" name="workphone">
+
+                        <label for="employee">Employee #:</label>
+                        <input type="text" id="employee" name="employee">
+
+                        
+                    </fieldset>
+
+                    <br><br><br>
+                    <fieldset>
+                        <input type="checkbox" id="involved" name="involved" value="involved">
+                        <label for="involved"> Involved</label>
+                        
+                        <input type="checkbox" id="witness" name="witness" value="witness">
+                        <label for="witness"> Witness</label>
+                        
+                        <input type="checkbox" id="complainant" name="complainant" value="complainant">
+                        <label for="complainant"> Complainant</label>
+
+                        <input type="checkbox" id="mentioned" name="mentioned" value="mentioned">
+                        <label for="mentioned"> Mentioned</label>
+                        <br><br>
+                        <label for="firstn">First Name</label>
+                        <input type="firstn" id="firstn" name="firstn" size = "30">
+
+                        <label for="lastn">Last Name</label>
+                        <input type="lastn" id="lastn" name="lastn" size = "30">
+
+                        <label for="title">Title:</label>
+                        <input type="title" id="title" name="title" size = "30">
+                        <br><br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" size = "30">
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" size = "30">
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state">
+
+                        <label for="zip">ZIP CODE:</label>
+                        <input type="text" id="zip" name="zip">
+                        <br><br>
+                        <label for="mailstop">Mailstop:</label>
+                        <input type="text" id="mailstop" name="mailstop">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size = "30">
+
+                        <label for="cellphone">Cell Phone #:</label>
+                        <input type="text" id="cellphone" name="cellphone">
+
+                        <label for="workphone">Work Phone #:</label>
+                        <input type="text" id="workphone" name="workphone">
+
+                        <label for="employee">Employee #:</label>
+                        <input type="text" id="employee" name="employee">
+
+                        
+                    </fieldset>
+                    
+                    <br><br><br>
+                    <fieldset>
+                        <input type="checkbox" id="involved" name="involved" value="involved">
+                        <label for="involved"> Involved</label>
+                        
+                        <input type="checkbox" id="witness" name="witness" value="witness">
+                        <label for="witness"> Witness</label>
+                        
+                        <input type="checkbox" id="complainant" name="complainant" value="complainant">
+                        <label for="complainant"> Complainant</label>
+
+                        <input type="checkbox" id="mentioned" name="mentioned" value="mentioned">
+                        <label for="mentioned"> Mentioned</label>
+                        <br><br>
+                        <label for="firstn">First Name</label>
+                        <input type="firstn" id="firstn" name="firstn" size = "30">
+
+                        <label for="lastn">Last Name</label>
+                        <input type="lastn" id="lastn" name="lastn" size = "30">
+
+                        <label for="title">Title:</label>
+                        <input type="title" id="title" name="title" size = "30">
+                        <br><br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" size = "30">
+
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" size = "30">
+
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state">
+
+                        <label for="zip">ZIP CODE:</label>
+                        <input type="text" id="zip" name="zip">
+                        <br><br>
+                        <label for="mailstop">Mailstop:</label>
+                        <input type="text" id="mailstop" name="mailstop">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size = "30">
+
+                        <label for="cellphone">Cell Phone #:</label>
+                        <input type="text" id="cellphone" name="cellphone">
+
+                        <label for="workphone">Work Phone #:</label>
+                        <input type="text" id="workphone" name="workphone">
+
+                        <label for="employee">Employee #:</label>
+                        <input type="text" id="employee" name="employee">
+
+                        
+                    </fieldset>
+                       <br><br>
+                    
+                       <fieldset>   
+                        <br><br>
+                        <legend>CLASSIFICATION LEVEL</legend>     
+                        <textarea name="summary">CLASSIFICATION LEVEL HERE
+May be exempt from public release under the Freedom of Information Act (5 U.S.C. 552) exemption number and category: 7, Law Enforcement
+                            
+Department of Name of Agency review required before public release
+Name/Org: Your name/org	Date: 
+Guidance (if applicable): 
+                            </textarea>
+                            <br><br>
+                    </fieldset>
+
+                    </fieldset>
+                    <br><br>
+                    <fieldset>   
+                        <br><br>
+                        <legend>SUMMARY</legend>     
+                        <textarea name="summary">Begin typing summary.</textarea>
+                            <br><br>
+                    </fieldset>
+                   <br><br>
+                    <fieldset>
+                        <legend>EVIDENCE SUBMITTED</legend>
+                        <br><br>
+
+                    <script>
+                    function addRow(){
+                        var str ="<tr><td contenteditable='true'></td><td contenteditable='true'></td><td contenteditable='true'></td></tr>";
+                        
+                        $('#mytable tbody').append(str);
+                    }
+                    </script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+                    <table id="mytable" style='width:100%'>
+                      <thead>
+                        <tr>
+                        <th style='width:15%'>Item #</h1>
+                        <th style='width:25%'>Name</h1>
+                        <th>Description</h1>
+                       </tr>
+                       
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td contenteditable="true"></td><td contenteditable="true"></td>
+                        </tr>
+                      <tr>
+                        <td>2</td>
+                        <td contenteditable='true'></td><td contenteditable='true'></td>
+                        </tr>
+                      <tr>
+                        <td>3</td>
+                        <td contenteditable='true'></td><td contenteditable='true'></td>
+                        </tr>
+                      </tbody>
+                        </table>
+                          <br><br>
+                        <input type="button" value="Add" onclick="addRow()" />    
+                    </fieldset>
+
+                  </form>
+
+                  <br><br>
+                  <fieldset>   
+                    <br><br>
+                    <legend>SOFTWARE UTILZED</legend>     
+                    <textarea name="summary">All software utilized in this examination is fully licensed and registered to [Agency Name] or its agents.  All software and forensic hardware has been validated pursuant to [Agency Name] policies and procedures.</textarea>
+                        <br><br>
+                </fieldset>
+
+                <br><br>
+                  <fieldset>   
+                    <br><br>
+                    <legend>FORENSIC EXAMINATION OF EVIDENCE</legend>     
+                    <h3>Evidence Figures/Images</h3>
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    </fieldset>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>HASH OF ORIGINAL EVIDENCE</legend>
+                    <p>The hash values obtained from the original evidence were as follows:</p>
+                    <input type="checkbox" id="MD5" name="MD5" value="MD5">
+                        <label for="MD5"> MD5:</label>
+                        <input type="text" id="MD5" name="MD5">
+                    <br><br>
+                    <input type="checkbox" id="SHA1" name="SHA1" value="SHA1">
+                        <label for="SHA1"> SHA1:</label>
+                        <input type="text" id="SHA1" name="SHA1">
+                    <br><br>
+                    <input type="checkbox" id="Other" name="Other" value="Other">
+                        <label for="Other"> Other:</label>
+                        <input type="text" id="Other" name="Other">
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>FORENSIC IMAGING</legend>
+                <p>After obtaining the hash value(s) of the original media, a forensic image was created.  The forensic image was placed on a:</p>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">Government owned, forensically wiped hard drive</label>
+                <br><br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">Government owned, forensically wiped Storage Area Network (SAN)</label>
+                <br><br>
+                <p>The forensic imaging software utilized in this process creates an imaging report, 
+                    detailing the hash value(s) of the newly created forensic image.  The hash value(s) of the forensic image was compared to the 
+                    original hash value obtained prior to imaging the device.  The hash value(s) of the forensic image:</p>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">Matched exactly the hash value(s) of the original media.</label>
+                <br><br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">Did not match the original hash value(s) of the media.  If checked, provide explanation below.</label>
+                    <br><br>
+                    <textarea name="summary">Type explanation here.</textarea>
+                        <br><br>
+                <br><br>
+                
+            </fieldset>
+
+            <br><br>
+                <fieldset>
+                    <legend>VIRUS AND MALWARE</legend>
+                <p>The original media was scanned for malware. Prior to the scan, all malware definitions were updated.  The results were:</p>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">No malware detected.</label>
+                <br><br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">Malware detected.</label>
+                    <br><br>
+                    <textarea name="summary">Identify and report on malware.</textarea>
+                        <br><br>
+                <br><br>
+                
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>DRIVE GEOMETRY</legend>
+                <br><br>
+                <textarea name="summary">If necessary, report on drive geometry.</textarea>
+                    <br><br>
+            <br><br>
+            
+        </fieldset>
+
+        <br><br>
+            <fieldset>
+                <legend>BIOS EXAMINATION</legend>
+                <p>Once the hard drive was removed, the computer was turned on and the BIOS (Basic Input/Output System) checked.  The following was found:</p>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">The date and time were accurate.</label>
+                    <br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">The date was accurate, but the time was inaccurate.  List time offset from correct time: </label>
+                    <input type="text">
+                    <br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">The time was accurate, but the date was inaccurate.  List date offset from correct date: </label>
+                    <input type="text">
+                    <br>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                <label for="checkbox">Forensic computer was adjusted to compensate for any time differences.</label>
+                    <p>What was used as a time reference:</p>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                    <label for="checkbox">Cellular phone set by network.</label>
+                    <br>
+                    <label for="checkbox">Other: </label>
+                    <input type="text">
+                    <br>
+            
+        </fieldset>
+
+        <br><br>
+        <fieldset>   
+          <br><br>
+          <legend>CONCLUSION</legend>     
+          <textarea name="summary">Forensic Examiner Conclusion Here</textarea>
+              <br><br>
+      </fieldset>
+        
+        </form>
+
+        </div>
+
+
+
+		</body>
+
+</html> 

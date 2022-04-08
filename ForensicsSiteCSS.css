@@ -112,3 +112,23 @@
 }
 
 }
+
+/* Intro Paragraph for Forms.CSS */
+
+.intro {
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px;
+}
+
+.formdiv {
+    text-align: center;
+}
+
+/* formatting for evidence table on form */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
