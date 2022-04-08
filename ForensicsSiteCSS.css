@@ -140,9 +140,7 @@ h1{
 
 .cocdiv {
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin: 100px;
 }
 
 input[type=text] {
